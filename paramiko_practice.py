@@ -21,7 +21,7 @@ import time
 def main():
     channel = paramiko.SSHClient()
     channel.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    channel.connect(hostname="192.168.6.5", username='cisco', password='cisco', look_for_keys=False, allow_agent=False)
+    channel.connect(hostname="R1", username='cisco', password='cisco', look_for_keys=False, allow_agent=False)
 
     shell = channel.invoke_shell()
 
